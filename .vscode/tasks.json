@@ -27,6 +27,21 @@
               "reveal": "always",
               "focus": true
             }
+        },
+        {
+            "label": "Build and Run C++ Program",
+            "type": "shell",
+            "command": "g++ -std=c++17 ${fileDirname}/*.cpp -o ${fileDirname}/${fileBasenameNoExtension} && ${fileDirname}/${fileBasenameNoExtension}",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "new"
+            },
+            "problemMatcher": []
         }
     ],
     "version": "2.0.0"
